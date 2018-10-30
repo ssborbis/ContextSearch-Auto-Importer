@@ -1,0 +1,34 @@
+{
+	"manifest_version": 2,
+	"name": "ContextSearch Auto Importer",
+	"description": "Native Messenger Add-on for ContextSearch web-ext",
+	"version": "1.1",
+	"homepage_url": "http://example.com/",
+	
+	"applications": {
+		"gecko": {
+			"strict_min_version": "57.0",
+			"id": "contextsearch.webext.native.messenger@ssborbis.addons.mozilla.org"
+		}
+	},
+
+	"background": {
+		"scripts": [
+			"searchEngineUtils.js",
+			"mozlz4.js",
+			"opensearch.js",
+			"native.js",
+			"background.js"
+		]
+	},
+		
+	"permissions": [
+		"storage",
+		"nativeMessaging"
+	],
+
+	"icons": {
+		"48": "icons/icon48.png"
+	}
+}
+
